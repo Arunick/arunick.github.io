@@ -66,20 +66,3 @@ clearBtn.addEventListener("click",function(evt) {
     context.strokeStyle = "red"; // drawing red lines.
 
 });
-
-// when the save button is clicked
-var saveBtn = document.getElementById("save");
-saveBtn.addEventListener("click",function (evt) {
-    // we'll save using the new HTML5 download attribute to save the image. 
-    // we'll give the image a name of draw-[timestamp].jpg
-
-    var now = new Date().getTime(); // get today's date in milliseconds.
-    var dataUri = canvas.toDataURL("image/jpeg");  // get the canvas data as a JPG.
-
-    // change the a href and download attributes so it'll save.
-    this.setAttribute("download","drawing-" + now + ".jpg");
-    this.setAttribute("href",dataUri);
-
-    // in older browsers you may need to substitute those last two lines of code with this:
-    // window.open(dataUri,"_blank");
-});
