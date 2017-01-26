@@ -29,6 +29,8 @@ canvas.addEventListener("mousemove",function (evt) {
     if (isMouseDown) {
         mouseX = evt.offsetX;
         mouseY = evt.offsetY;
+         context.lineWidth = 8;
+
 
         context.lineTo(mouseX, mouseY);
         context.stroke();
