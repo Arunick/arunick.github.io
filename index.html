@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	<title>CS:GO Painter</title>
+</head>
+<body style="background: url('img/bg.png') no-repeat; background-color: #2b2b2c">
+
+<div class="panel">
+<canvas id="drawingPad" width="1025" height="1025"></canvas>
+<ul id="palette">
+    <li class="active" style="background:#ff0000"></li>
+    <li style="background:#ffa200"></li>
+    <li style="background:#005aff"></li>
+</ul>
+
+<a href="#" id="clear">Очистить</a>
+<a href="#" id="save" download="drawing.png" target="_blank">Сохранить</a>
+
+<form method="post" action="1.php" onsubmit="return false">
+	<button class="color btn_01" id="red" name="button" value="red" onclick='change_color(this)'>de_dust2</button>
+	<button class="color btn_02" id="orange" name="button" value="orange" onclick='change_color_01(this)'>de_cache</button>
+	<button class="color btn_03" id="03" name="button" value="03" onclick='change_color_02(this)'>de_mirage</button>
+	<button class="color btn_04" id="04" name="button" value="04" onclick='change_color_03(this)'>de_cobble</button>
+	<button class="color btn_05" id="05" name="button" value="05" onclick='change_color_04(this)'>de_overpass</button>
+	<button class="color btn_06" id="06" name="button" value="06" onclick='change_color_05(this)'>de_train</button>
+	<button class="color btn_07" id="07" name="button" value="07" onclick='change_color_06(this)'>de_nuke</button>
+</form>
+
+<div class="footer">
+	<p class="text_footer">Powered By AHD Studio. </p> <p class="text_footer_01"> For "Black Falcons" CS:GO Team</p>
+</div>
+</div>
+
+	<script type="text/javascript" src="js/paint.js"></script>
+</body>
+</html>
