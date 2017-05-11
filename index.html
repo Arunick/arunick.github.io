@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-			<link rel="shortcut icon" href="img/favicon.png" type="image/png">
- 			<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+ 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
 	<script type="text/javascript" src="js/js.js"></script>
-	<title>CS:GO Painter</title>
-	<
+	<title>CS:GO Painter V_0.2</title>
 </head>
-<body style="background: url('img/bg.png') no-repeat; background-color: #2b2b2c">
+<body style="background: url('img/bg.png') no-repeat; background-color: #2b2b2c; position: fixed;">
+<p class="version">V_0.2</p>
 
 <div class="panel">
-<canvas id="drawingPad" width="1025" height="1025"></canvas>
-<ul id="palette">
-    <li class="active" style="background:#ff0000"></li>
-    <li style="background:#ffa200"></li>
-    <li style="background:#005aff"></li>
-</ul>
+<canvas id="drawingPad" width="950" height="950"></canvas>
 
-<a href="#" id="clear">Очистить</a>
+<a href="#" id="clear">ОЧИСТИТЬ</a>
 
 <form method="post" action="1.php" onsubmit="return false">
-	<button class="color btn_01" id="red" name="button" value="red" onclick='change_color(this)'>de_dust2</button>
-	<button class="color btn_02" id="orange" name="button" value="orange" onclick='change_color_01(this)'>de_cache</button>
-	<button class="color btn_03" id="03" name="button" value="03" onclick='change_color_02(this)'>de_mirage</button>
-	<button class="color btn_04" id="04" name="button" value="04" onclick='change_color_03(this)'>de_cobble</button>
-	<button class="color btn_05" id="05" name="button" value="05" onclick='change_color_04(this)'>de_overpass</button>
-	<button class="color btn_06" id="06" name="button" value="06" onclick='change_color_05(this)'>de_train</button>
-	<button class="color btn_07" id="07" name="button" value="07" onclick='change_color_06(this)'>de_nuke</button>
+	<button class="color btn_01" id="red" name="button" value="red" onclick='change_color(this)'>INFERNO</button>
+	<button class="color btn_02" id="orange" name="button" value="orange" onclick='change_color_01(this)'>MIRAGE</button>
+	<button class="color btn_03" id="03" name="button" value="03" onclick='change_color_02(this)'>CACHE</button>
+	<button class="color btn_04" id="04" name="button" value="04" onclick='change_color_03(this)'>OVERPASS</button>
+	<button class="color btn_05" id="05" name="button" value="05" onclick='change_color_04(this)'>COBBLESTONE</button>
+	<button class="color btn_06" id="06" name="button" value="06" onclick='change_color_05(this)'>NUKE</button>
+	<button class="color btn_07" id="07" name="button" value="07" onclick='change_color_06(this)'>TRAIN</button>
 </form>
+
+<div id="plt">
+		<div class="btn_size">
+			<button class="btn_size_style" onclick="context.lineWidth = 2">2</button>
+			<button class="btn_size_style" onclick="context.lineWidth = 4">4</button>
+			<button class="btn_size_style" onclick="context.lineWidth = 6">6</button>
+			<button class="btn_size_style" onclick="context.lineWidth = 8">8</button>
+			<button class="btn_size_style" onclick="context.lineWidth = 12">12</button>
+		</div>
+		<ul id="palette">
+			<p id="plt_text">PALETTE</p>
+		    <li style="background:#ff0000"></li>
+		    <li style="background:#ffa200"></li>
+		    <li style="background:#005aff"></li>
+		</ul>
+		<ul id="palette_01">
+			<li style="background:#34495E"></li>
+		    <li style="background:#26A65B"></li>
+		    <li style="background:#ABB7B7"></li>
+</ul>
+</div>
 
 <div class="footer">
 	<p class="text_footer">Powered By AHD Studio. </p> <p class="text_footer_01"> For "Black Falcons" CS:GO Team</p>

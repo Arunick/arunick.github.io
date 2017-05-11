@@ -25,53 +25,81 @@ ul {
     height:30px;
 }
 li {
-    margin:0;
+    margin-left: 5px;
     padding:0;
-    border:2px solid #3A9451;
+    border: 2px solid #212121;
     display:block;
     float:left;
-    width:30px;
-    height:30px;
+    width: 50px;
+    height: 50px;
     cursor:pointer;
 }
 li.active {
-    border:2px solid #276336;
+    border: 2px solid #EF4836;
 }
 a {
-    margin-top:10px;
     display:block;
-    border:2px solid #3A9451;
-    width:220px;
+    border: 2px solid #EF4836;
+    width: 216px;
     height: 30px;
-    background-color:rgba(58, 148, 81, 0.5);
-    color:white;
-    text-decoration:none;
-    font-size:24px;
-    text-align:center;
+    background-color: rgba(239, 72, 54, 0.5);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    z-index: 99;
 }
 
 a:hover{
-    margin-top:10px;
     display:block;
-    border:2px solid #3A9451;
-    width:220px;
+    border: 2px solid #EF4836;
+    width: 216px;
     height: 30px;
-    background-color:rgba(58, 148, 81, 0.3);
+    background-color:rgba(239, 72, 54, 0.3);
     color:white;
     text-decoration:none;
-    font-size:24px;
-    text-align:center;
+    font-size: 20px;
+    text-align: center;
+    z-index: 99;
+}
+
+.version{
+    color:white;
+    font-size: 20px;
+    z-index: 99;
+    position: absolute;
+    margin-top: 95px;
+    margin-left: 114px;
+    padding: 0;
+}
+
+#plt{
+    margin-top: -105px;
+    margin-left: -40px;
+}
+
+#plt_text{
+    padding: 0;
 }
 
 #palette{
-    margin-top: -300px;
+    font-size: 18px;
+    color: white;
+    margin-top: -600px;
     position: absolute;
-    margin-left: -118px;
+    margin-left: -206px;
+}
+
+#palette_01{
+    margin-top: -480px;
+    position: absolute;
+    margin-left: -206px;
 }
 
 #clear{
-	margin-top: -205px;
+	margin-top: -145px;
 	margin-left: -240px;
+    position: absolute;
 }
 
 #save{
@@ -88,13 +116,58 @@ a:hover{
 
 .panel{
 	margin-left: 500px;
+    margin-top: 10px;
 }
+
+#btn_crt{
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.btn_size{
+    margin-top: 20px;
+    margin-left: -208px;
+}
+
+.btn_size_style{
+    margin-left: 8px;
+    float: left;
+    display:block;
+    border:2px solid #3A9451;
+    width: 40px;
+    height: 40px;
+    background-color:rgba(58, 148, 81, 0.5);
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    text-align:center;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.btn_size_style:hover{
+    margin-left: 8px;
+    float: left;
+    display:block;
+    border:2px solid #3A9451;
+    width: 40px;
+    height: 40px;
+    background-color:rgba(58, 148, 81, 0.3);
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    text-align:center;
+    z-index: 99;
+    cursor: pointer;
+}
+
 .btn_01{
-	margin-top:-805px;
+	margin-top:-495px;
     display:block;
     border:2px solid #3A9451;
     width:220px;
-    height: 30px;
+    height: 40px;
     background-color:rgba(58, 148, 81, 0.5);
     color:white;
     text-decoration:none;
@@ -106,11 +179,11 @@ a:hover{
 }
 
 .btn_02{
-	margin-top:-765px;
+	margin-top:-445px;
     display:block;
     border:2px solid #3A9451;
     width:220px;
-    height: 30px;
+    height: 40px;
     background-color:rgba(58, 148, 81, 0.5);
     color:white;
     text-decoration:none;
@@ -122,11 +195,11 @@ a:hover{
 }
 
 .btn_03{
-	margin-top:-725px;
+	margin-top:-395px;
     display:block;
     border:2px solid #3A9451;
     width:220px;
-    height: 30px;
+    height: 40px;
     background-color:rgba(58, 148, 81, 0.5);
     color:white;
     text-decoration:none;
@@ -138,11 +211,11 @@ a:hover{
 }
 
 .btn_04{
-	margin-top:-685px;
+	margin-top:-345px;
     display:block;
     border:2px solid #3A9451;
     width:220px;
-    height: 30px;
+    height: 40px;
     background-color:rgba(58, 148, 81, 0.5);
     color:white;
     text-decoration:none;
@@ -153,11 +226,11 @@ a:hover{
     z-index: 99;
 }
 .btn_05{
-	margin-top:-645px;
+	margin-top:-295px;
     display:block;
     border:2px solid #3A9451;
     width:220px;
-    height: 30px;
+    height: 40px;
     background-color:rgba(58, 148, 81, 0.5);
     color:white;
     text-decoration:none;
@@ -168,11 +241,11 @@ a:hover{
     z-index: 99;
 }
 .btn_06{
-	margin-top:-605px;
+	margin-top:-245px;
     display:block;
     border:2px solid #3A9451;
     width:220px;
-    height: 30px;
+    height: 40px;
     background-color:rgba(58, 148, 81, 0.5);
     color:white;
     text-decoration:none;
@@ -183,11 +256,11 @@ a:hover{
     z-index: 99;
 }
 .btn_07{
-	margin-top:-565px;
+	margin-top:-195px;
     display:block;
     border:2px solid #3A9451;
     width:220px;
-    height: 30px;
+    height: 40px;
     background-color:rgba(58, 148, 81, 0.5);
     color:white;
     text-decoration:none;
