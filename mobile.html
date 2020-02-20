@@ -280,6 +280,7 @@ a:visited{
 		top: 86.928px;
 		overflow: visible;
 	}
+
 	.Rectangle_1 {
 		position: absolute;
 		overflow: visible;
@@ -292,6 +293,18 @@ a:visited{
 	#GEAR:hover{color: rgba(254,204,2,1); transition: ease-in 0.4s;}
 	#PRESETS:hover{color: rgba(254,204,2,1); transition: ease-in 0.4s;}
 	#PORTFOLIO:hover{color: rgba(254,204,2,1); transition: ease-in 0.4s;}
+#HOME::selection {
+   background: transparent;
+}
+#GEAR::selection {
+   background: transparent;
+}
+#PRESETS::selection {
+   background: transparent;
+}
+#PORTFOLIO::selection {
+   background: transparent;
+}
 	#HOME {
 		position: absolute;
 		left: 22px;
@@ -2977,13 +2990,13 @@ window.application = new Application();
 				<span>HOME</span>
 			</div>
 			<div id="GEAR">
-				<span>GEAR</span>
+				<a href="Page_Gear.html">GEAR</a>
 			</div>
 			<div id="PRESETS">
-				<span>PRESETS</span>
+				<a href="Page_Presets.html">PRESETS</a>
 			</div>
 			<div id="PORTFOLIO">
-				<span>PORTFOLIO</span>
+				<a href="Page_Portfolio.html">PORTFOLIO</a>
 			</div>
 		</div>
 		<div id="Footer">
