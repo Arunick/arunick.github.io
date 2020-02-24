@@ -4,20 +4,10 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <title>ARCREW - Home</title>
 <style id="applicationStylesheet" type="text/css">
-html, body {margin: 0; height: 100%; overflow: hidden;}
-	.mediaViewInfo {
-		--web-view-name: Android Mobile – 1;
-		--web-view-id: Android_Mobile___1;
-		--web-scale-on-resize: true;
-		--web-application: true;
-		--web-enable-deep-linking: true;
-	}
-	:root {
-		--web-view-ids: Android_Mobile___1;
-	}
+html, body {margin: 0; height: 100%; overflow: hidden}
 a{
 	text-decoration: none;
 	color: #fff;
@@ -156,10 +146,9 @@ a:visited{
 	}
 	#Android_Mobile___1 {
 		position: absolute;
-		width: 600px;
-		height: 700px;
+		width: 100%;
+		height: 100%;
 		background-color: rgba(255,255,255,1);
-		overflow: hidden;
 		--web-view-name: Android Mobile – 1;
 		--web-view-id: Android_Mobile___1;
 		--web-scale-on-resize: true;
@@ -168,31 +157,19 @@ a:visited{
 	}
 	#Group_4 {
 		position: absolute;
-		width: 2078.55px;
-		height: 1385.7px;
+		width: 100%;
+		height: 100%;
 		left: 0px;
 		top: -86.928px;
 		overflow: visible;
 	}
 	#DSC00297 {
 		position: absolute;
-		width: 2078.55px;
-		height: 1385.7px;
+		width: 100%;
+		height: 100%;
 		left: 0px;
 		top: 0px;
 		overflow: visible;
-	}
-	#Path_5 {
-		opacity: 0.69;
-	}
-	.Path_5 {
-		overflow: visible;
-		position: absolute;
-		width: 1920px;
-		height: 1007.288px;
-		left: 0px;
-		top: 86.928px;
-		transform: matrix(1,0,0,1,0,0);
 	}
 	#ACREW {
 		position: absolute;
@@ -210,14 +187,15 @@ a:visited{
 		top: 354.492px;
 		overflow: visible;
 	}
-	.Rectangle_3 {
+	.Rectangle_2 {
 		position: absolute;
 		overflow: visible;
-		width: 307.717px;
-		height: 52.168px;
+		width: 100%;
+		height: 100%;
 		left: 0px;
 		top: 0px;
-		cursor: pointer;
+		opacity: 0.69;
+		background-color: rgba(0,0,0,1);
 	}
 	#GET_YOUR_WORK_DONE {
 		position: absolute;
@@ -234,11 +212,6 @@ a:visited{
 		color: rgba(255,255,255,1);
 		cursor: pointer;
 	}
-
-	.rect:hover{
-	fill: rgba(25,25,25,1);
-	transition: 0.2s ease-in;
-}
 
 	#_Text_ARcrew__ {
 		position: absolute;
@@ -287,6 +260,7 @@ a:visited{
 		height: 60px;
 		left: 0px;
 		top: 0px;
+		background-color: rgba(0,0,0,1);
 	}
 	#HOME:hover{color: rgba(254,204,2,1);}
 	#GEAR:hover{color: rgba(254,204,2,1); transition: ease-in 0.4s;}
@@ -356,26 +330,26 @@ a:visited{
 		position: absolute;
 		width: 231px;
 		height: 247.293px;
-		left: 65px;
-		top: 431.636px;
+		left: -40px;
+		top: 461.636px;
 		overflow: visible;
 	}
 	#Contact_Us__arcrewyt_gmail_com {
     position: absolute;
-    left: 0px;
-    top: -12px;
+    left: 60px;
+    top: 212px;
     overflow: visible;
-    width: 387px;
+    width: 337px;
     display: inline-block;
     white-space: nowrap;
     text-align: left;
     font-family: Montserrat, Arial;
     font-style: normal;
     font-weight: normal;
-    font-size: 21px;
+    font-size: 18px;
     color: rgba(255,255,255,1);
     background-color: rgba(1,1,1,0.2);
-    padding: 17px;
+    padding: 13px;
     border-radius: 12px;
 	}
 	#SOC {
@@ -513,8 +487,8 @@ a:visited{
 	}
 	#Copyright_2020_Arcrew {
 		position: absolute;
-		left: 56px;
-		top: 690px;
+		left: 35px;
+		top: 850px;
 		overflow: visible;
 		width: 150px;
 		white-space: nowrap;
@@ -524,6 +498,31 @@ a:visited{
 		font-weight: normal;
 		font-size: 13px;
 		color: rgba(131,131,131,1);
+	}
+		.rect{
+		border-radius: 25px;
+		position: absolute;
+		padding: .7em 1em calc(.7em + 3px);
+		font-size: 20px; 
+		font-weight: bold;
+		text-shadow: rgba(255,255,255,0.2) 3px 2px;
+		font-family: Montserrat, Arial;
+		color: #fff;
+		z-index: 9999;
+		background-color: #000;
+		cursor: pointer;
+		outline: none; 
+		border: 4px solid #fff;
+		width: 305px;
+		height: 60px;
+		text-align: center;
+		left: -20%;
+	}
+	.rect:hover{
+		transition: 0.3s ease-in;
+		color: #000;
+		background-color: rgba(254,204,2,1);
+		text-shadow: #ba8c00 3px 2px;
 	}
 </style>
 <script id="applicationScript">
@@ -2952,34 +2951,118 @@ window.application = new Application();
 <body>
 <div id="Android_Mobile___1">
 	<div id="Group_4">
-		<img class="fade-in" id="DSC00297" src="Background.jpg">
-		<svg class="Path_5" viewBox="0 0 1920 1007.288">
-			<path fill="rgba(0,0,0,1)" id="Path_5" d="M 0 0 L 1920 0 L 1920 1007.287536621094 L 0 1007.287536621094 L 0 0 Z">
-			</path>
-		</svg>
-		<img class="fade-in" id="ACREW" src="ACREW.png">
-		<div id="_But_GYWD">
-			<svg class="Rectangle_3">
-				<rect class="rect" fill="rgba(0,0,0,1)" stroke="rgba(255,255,255,1)" stroke-width="4px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_3" rx="14" ry="14" x="0" y="0" width="307.717" height="52.168">
-				</rect>
-			</svg>
-			<div id="GET_YOUR_WORK_DONE">
-				<span>GET YOUR WORK DONE</span>
-			</div>
+		<video autoplay muted loop style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%;">
+  <source src="../bgvideo1.mp4" type="video/mp4">
+</video>
+	<div class="Rectangle_2">
+	</div>
+		<img class="fade-in" id="ACREW" src="../ACREW.png">
+		<div onclick="" id="_But_GYWD">
+		<div id="GET_YOUR_WORK_DONE">
+			<a class="rect" href="Page_Form.html">CONTACT WITH US</a>
 		</div>
+	</div>
 		<div id="_Text_ARcrew__">
 			<div id="ARCREW___Filmmaking___Photogra">
 				<span>ARCREW / Filmmaking & Photography</span><br><span style="font-style:normal;font-weight:normal;color:rgba(255,205,2,1);">Located in </span><span style="font-style:italic;font-weight:normal;text-decoration:underline;"> <a href="https://www.google.com/maps/place/%D0%AD%D1%81%D1%82%D0%BE%D0%BD%D0%B8%D1%8F/@58.5423125,20.4492361,6z/data=!3m1!4b1!4m5!3m4!1s0x4692949c82a04bfd:0x40ea9fba4fb425c3!8m2!3d58.595272!4d25.0136071" target="_blank" color="#fff">Tallinn, Estonia </a></span>
 			</div>
+			<div class="Slider1 fade-in">
+	<div class="topline"></div>
+	<p class="lang">Choose Language:</p>
+	<a class="Chooselang" href="../est/index-est.html">
+		Eesti
+	</a>
+	<a class="Chooselang2" href="../rus/index-rus.html">
+		Русский
+	</a>
+	</div>
+<style type="text/css">
+	.topline{
+		background-color: #000;
+		width: 340px;
+		height: 20px;
+		position: absolute;
+		top: -20px;
+		z-index: 1;
+	}
+	.Slider1{
+		position: absolute;
+		background-color: rgba(1,1,1,0.2);
+		width: 320px;
+		height: 130px;
+		top: 120px;
+		left: 25%;
+		z-index: 1;
+	}
+	.lang{
+		position: absolute;
+		overflow: visible;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat, Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 23px;
+		color: #fff;
+		z-index: 9999;
+		margin-left: 40px;
+		margin-top: 25px;
+		color: rgba(254,204,2,1);
+		cursor: default;
+	}
+	.Chooselang:hover{color: rgba(254,204,2,1);}
+	.Chooselang2:hover{color: rgba(254,204,2,1);}
+	.Chooselang{
+		position: absolute;
+		overflow: visible;
+		white-space: nowrap;
+		cursor: pointer;
+		text-align: left;
+		font-family: Montserrat, Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: #fff;
+		z-index: 9999;
+		margin-left: 100px;
+		margin-top: 70px;
+		background-color: #000;
+		padding: 8px;
+		padding-left:40px;
+		padding-right: 40px;
+		border-radius: 12px;
+		border: 4px solid #fff;
+	}
+	.Chooselang2{
+		position: absolute;
+		overflow: visible;
+		white-space: nowrap;
+		cursor: pointer;
+		text-align: left;
+		font-family: Montserrat, Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: #fff;
+		z-index: 9999;
+		margin-left: 100px;
+		margin-top: 120px;
+		background-color: #000;
+		padding: 8px;
+		padding-left:25px;
+		padding-right: 25px;
+		border-radius: 12px;
+		border: 4px solid #fff;
+	}
+</style>
 			<svg class="Icon_metro_location" viewBox="8.355 1.928 10.268 16.429">
 				<path fill="rgba(255,255,255,1)" id="Icon_metro_location" d="M 13.48872852325439 1.928033590316772 C 10.65332412719727 1.928033590316772 8.354801177978516 4.226556777954102 8.354801177978516 7.061960220336914 C 8.354801177978516 12.19588661193848 13.48872852325439 18.35659980773926 13.48872852325439 18.35659980773926 C 13.48872852325439 18.35659980773926 18.62265396118164 12.19588661193848 18.62265396118164 7.061960220336914 C 18.62265396118164 4.226556777954102 16.32409858703613 1.928033709526062 13.48872852325439 1.928033709526062 Z M 13.48872852325439 10.20648956298828 C 11.75204944610596 10.20648956298828 10.34419822692871 8.798639297485352 10.34419822692871 7.061960220336914 C 10.34419822692871 5.325281143188477 11.75204944610596 3.91743016242981 13.48872852325439 3.91743016242981 C 15.22540760040283 3.91743016242981 16.63325691223145 5.325281143188477 16.63325691223145 7.061960220336914 C 16.63325691223145 8.798639297485352 15.22540664672852 10.20648956298828 13.48872852325439 10.20648956298828 Z M 11.4993314743042 7.061960220336914 C 11.4993314743042 5.963252067565918 12.39001941680908 5.072563171386719 13.48872852325439 5.072563171386719 C 14.58743762969971 5.072563171386719 15.47812461853027 5.963252067565918 15.47812461853027 7.061960220336914 C 15.47812461853027 8.160669326782227 14.58743762969971 9.051357269287109 13.48872852325439 9.051357269287109 C 12.39001941680908 9.051357269287109 11.4993314743042 8.160669326782227 11.4993314743042 7.061960220336914 Z">
 				</path>
 			</svg>
 		</div>
 		<div id="Menu">
-			<svg class="Rectangle_1">
-				<rect fill="rgba(0,0,0,1)" id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="100%" height="60">
-				</rect>
+		<div class="Rectangle_1">
+			</div>
 			</svg>
 			<div id="HOME">
 				<span>HOME</span>
